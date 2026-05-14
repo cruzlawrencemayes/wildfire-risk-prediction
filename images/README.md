@@ -1,5 +1,13 @@
-# Visualizations
+# Wildfire Prediction Visualizations
 
-This folder contains charts, heatmaps, model comparison visuals, confusion matrices, and exploratory data analysis graphics generated during the wildfire prediction project.
+This folder contains visualizations generated during exploratory data analysis and machine learning evaluation for the wildfire prediction project.
 
-The visualizations support the machine learning workflow by highlighting wildfire trends, classifier performance, feature relationships, and fire distribution patterns across New Mexico wildfire data.
+Visualizations include:
+- Fire occurrence trends by year
+- Fire size distributions
+- Confusion matrices
+- Model comparison metrics
+- Threshold tuning analysis
+- Feature importance analysis
+
+These visuals were used to evaluate wildfire prediction performance and understand patterns within the New Mexico wildfire dataset.
