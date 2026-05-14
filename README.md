@@ -2,15 +2,19 @@
 
 ## Project Overview
 
-This project analyzes wildfire patterns in New Mexico using machine learning and historical wildfire datasets. The analysis focuses on identifying environmental and wildfire-related patterns associated with large fire events while demonstrating a complete machine learning workflow including preprocessing, exploratory analysis, classification modeling, and evaluation.
+This project analyzes wildfire activity patterns in New Mexico using machine learning, historical wildfire records, and environmental data extracted from the FPA-FOD wildfire database. The project focused on identifying wildfire trends, exploring fire size distributions, and developing classification models capable of detecting large wildfire events.
 
-As team leader, responsibilities included coordinating project direction, organizing analytical workflows, guiding model evaluation, and integrating results across multiple project phases.
+The workflow included database extraction, preprocessing, exploratory data analysis, feature engineering, classification modeling, threshold tuning, and performance evaluation across multiple machine learning algorithms.
+
+As team leader, responsibilities included organizing the analytical workflow, coordinating project phases, guiding model evaluation decisions, integrating notebook results, and overseeing final project development.
 
 ---
 
 ## Business Problem
 
-Wildfires create significant environmental, economic, and public safety challenges across the Southwestern United States. This project was designed to explore wildfire occurrence patterns and develop predictive classification models capable of identifying higher-risk wildfire events using historical wildfire records and environmental indicators.
+Wildfires create major environmental, economic, and public safety challenges across the Southwestern United States. Accurate wildfire prediction and early detection are critical for resource allocation, emergency response planning, and environmental risk management.
+
+This project explored whether historical wildfire characteristics and environmental indicators could be used to classify and predict higher-risk wildfire events while evaluating the strengths and limitations of multiple machine learning approaches.
 
 ---
 
@@ -18,6 +22,7 @@ Wildfires create significant environmental, economic, and public safety challeng
 
 - Python
 - Pandas & NumPy
+- SQLite
 - Scikit-learn
 - Jupyter Notebook
 - Matplotlib & Seaborn
@@ -25,78 +30,5 @@ Wildfires create significant environmental, economic, and public safety challeng
 - Exploratory Data Analysis (EDA)
 - Classification Modeling
 - Data Mining
-
----
-
-## Machine Learning Models
-
-The following machine learning models and approaches were explored throughout the project:
-
-- Logistic Regression
-- Random Forest Classification
-- K-Nearest Neighbors (KNN)
+- Feature Engineering
 - Threshold Tuning
-- Confusion Matrix Evaluation
-- Feature Engineering & Preprocessing
-
----
-
-## Key Areas of Analysis
-
-- Wildfire frequency trends across New Mexico
-- Fire size distribution analysis
-- Wildfire cause analysis
-- Large fire classification modeling
-- Precision vs. recall tradeoff evaluation
-- Model performance comparison
-- Threshold tuning for wildfire detection optimization
-
----
-
-## Visualizations & Insights
-
-### Fire Causes in New Mexico
-
-Analyzes the most common wildfire causes across New Mexico. Lightning represented the leading cause of wildfire incidents, followed by miscellaneous and debris burning causes.
-
-### Fire Size Distribution
-
-Shows the distribution of wildfire sizes across New Mexico. Most fires were relatively small, while a limited number of extreme wildfire events created a highly skewed distribution.
-
-### Number of Fires Annually
-
-Displays yearly wildfire occurrence trends across New Mexico between 1992–2015, highlighting fluctuations in wildfire activity over time.
-
-### Classifier Performance Comparison
-
-Compares Logistic Regression, Random Forest, and KNN classification models using metrics such as accuracy, precision, recall, and F1 score.
-
-### KNN Confusion Matrix
-
-Evaluates KNN classification performance and demonstrates challenges related to class imbalance and positive wildfire event detection.
-
-### Random Forest Confusion Matrix
-
-Illustrates Random Forest model performance, showing stronger precision but lower recall when identifying large wildfire events.
-
-### Tuned Logistic Regression
-
-Demonstrates threshold tuning improvements applied to Logistic Regression in order to balance wildfire detection recall and false positive reduction.
-
----
-
-## Repository Structure
-
-```text
-images/        -> Charts, visualizations, and confusion matrices
-notebook/      -> Jupyter notebooks and ML workflows
-report/        -> Project reports and documentation
-```
-
----
-
-## Project Outcome
-
-The project demonstrated the challenges associated with wildfire prediction due to class imbalance and environmental variability. Logistic Regression with threshold tuning produced the most balanced wildfire detection performance, while Random Forest achieved higher precision at the cost of lower recall.
-
-The analysis reinforced the importance of evaluating multiple machine learning metrics rather than relying solely on overall accuracy when working with high-risk environmental prediction problems.
